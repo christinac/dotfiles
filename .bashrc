@@ -4,6 +4,9 @@ export EDITOR=open
 
 # Nav
 alias cdev="cd ~/Dev"
+alias cdevl="cd ~/Dev/christina-books"
+alias cdevcl="cd ~/Dev/changeslogged"
+alias cdevj="cd ~/Dev/jobs"
 
 # Git
 alias ga="git add"
@@ -12,27 +15,35 @@ alias gap="git add -p"
 alias grm="git rm"
 alias grmr="git rm -r"
 
-alias gco="git commit"
+alias gc="git commit"
 alias gcm="git commit -m"
+alias gca="git commit --amend"
 
 alias gpl="git pull"
 alias gplom="git pull origin master"
 
 alias gp="git push"
+alias gpo="git push origin"
 alias gpom="git push origin master"
-alias gph="git push heroku master"
+alias gphm="git push heroku master"
 
 alias gdif="git diff"
 
-alias gfe="get fetch"
-alias gfeom="get fetch origin/master"
+alias gf="get fetch"
+alias gfom="get fetch origin/master"
 
 alias gre="git rebase"
 alias greom="git rebase origin/master"
 
 alias gsta="git status -s"
 
-alias gcareful="git reset HEAD --hard"
+alias greshard="git reset HEAD --hard"
+
+# Heroku 
+alias hlt="heroku logs --tail"
+
+# Hoot
+alias hootun="ssh -N tunnel"
 
 # Website
 alias sshcc="ssh root@69.164.216.101"
