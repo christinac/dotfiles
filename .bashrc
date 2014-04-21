@@ -7,6 +7,7 @@ alias cdev="cd ~/Dev"
 alias cdevl="cd ~/Dev/christina-books"
 alias cdevcl="cd ~/Dev/changeslogged"
 alias cdevj="cd ~/Dev/jobs"
+alias cdevap = "cd ~/Dev/apcs"
 
 # Git
 alias ga="git add"
@@ -39,17 +40,19 @@ alias gsta="git status -s"
 
 alias greshard="git reset HEAD --hard"
 
+alias gb = "git branch"
+alias gch = "git checkout "
+alias gchb = "git checkout -b "
+alias gdis = "git checkout -- "
+
 # Heroku 
 alias hlt="heroku logs --tail"
 
-# Hoot
-alias hootun="ssh -N tunnel"
-
-# Website
+# cc.com
 alias sshcc="ssh root@69.164.216.101"
 
 function publish() {
-  scp -r $1 root@69.164.216.101:/www/christinacacioppo.com/$2
+  scp -r $1 root@69.164.216.101:www/christinacacioppo.com/$2
 }
 
 function insert_sudo () { zle beginning-of-line; zle -U "sudo " }
